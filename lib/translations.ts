@@ -62,7 +62,7 @@ export const translations = {
         {
           company: 'minato.ai',
           role: 'Ingénieur Fullstack & DevOps',
-          period: '2023 - Présent',
+          period: '2024 - 2025',
           achievements: [
             'Développement et déploiement d\'une plateforme SaaS pour créateurs de contenu',
             'Architecture CI/CD avec GitHub Actions et Docker',
@@ -73,7 +73,7 @@ export const translations = {
         {
           company: 'Unikeza',
           role: 'Développeur Fullstack',
-          period: '2022 - 2023',
+          period: '2023 - 2024',
           achievements: [
             'Création d\'applications web fullstack avec React et Node.js',
             'Optimisation des performances et refactorisation de codebase',
@@ -84,7 +84,7 @@ export const translations = {
         {
           company: 'ENSP Douala',
           role: 'Études & Certification',
-          period: '2018 - 2022',
+          period: '2020 - 2025',
           achievements: [
             'Formation en Génie Informatique',
             'Spécialisation en développement logiciel et systèmes distribués',
@@ -131,9 +131,9 @@ export const translations = {
       description: 'Développeur fullstack passionné par l\'innovation et les technologies modernes.',
       quickLinks: 'Liens rapides',
       connect: 'Me contacter',
-      copyright: '© 2024 Joseph Maxime Yene. Tous droits réservés.',
+      copyright: '© 2024 Joseph Maxime YENE. Tous droits réservés.',
       email: 'maximeyene@gmail.com',
-      phone: '+237 6XX XXX XXX',
+      phone: '+237 691 673 169',
     },
   },
   
@@ -149,7 +149,7 @@ export const translations = {
     
     // Hero Section
     hero: {
-      title: 'Joseph Maxime Yene',
+      title: 'Joseph Maxime YENE',
       subtitle: 'Fullstack Engineer & DevOps',
       description: 'Specialized in fullstack development, Machine Learning integration, and DevOps solutions. Passionate about creating innovative applications in a startup environment.',
       cta: 'See my projects',
@@ -200,7 +200,7 @@ export const translations = {
         {
           company: 'minato.ai',
           role: 'Fullstack Engineer & DevOps',
-          period: '2023 - Present',
+          period: '2024 - 2025',
           achievements: [
             'Development and deployment of a SaaS platform for content creators',
             'CI/CD architecture with GitHub Actions and Docker',
@@ -211,7 +211,7 @@ export const translations = {
         {
           company: 'Unikeza',
           role: 'Fullstack Developer',
-          period: '2022 - 2023',
+          period: '2023 - 2024',
           achievements: [
             'Creation of fullstack web applications with React and Node.js',
             'Performance optimization and codebase refactoring',
@@ -222,7 +222,7 @@ export const translations = {
         {
           company: 'ENSP Douala',
           role: 'Studies & Certification',
-          period: '2018 - 2022',
+          period: '2020 - 2025',
           achievements: [
             'Training in Software Engineering',
             'Specialization in software development and distributed systems',

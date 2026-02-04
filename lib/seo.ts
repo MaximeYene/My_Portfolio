@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const baseMetadata: Metadata = {
-  title: 'Joseph Maxime Yene - Ingénieur Fullstack & DevOps',
+  title: 'Joseph Maxime YENE - Ingénieur Fullstack & DevOps',
   description: 'Portfolio professionnel - Ingénieur Fullstack & DevOps spécialisé en Machine Learning, innovation startup et solutions cloud.',
   keywords: [
     'Ingénieur Fullstack',
@@ -14,18 +14,18 @@ export const baseMetadata: Metadata = {
     'Cameroun',
     'Portfolio',
   ],
-  authors: [{ name: 'Joseph Maxime Yene' }],
+  authors: [{ name: 'Joseph Maxime YENE' }],
   openGraph: {
-    title: 'Joseph Maxime Yene - Ingénieur Fullstack & DevOps',
+    title: 'Joseph Maxime YENE - Ingénieur Fullstack & DevOps',
     description: 'Découvrez mon portfolio professionnel avec mes projets innovants, expériences et compétences techniques.',
     type: 'website',
     locale: 'fr_FR',
     url: 'https://josephmaxime.dev',
-    siteName: 'Portfolio Joseph Maxime Yene',
+    siteName: 'Portfolio Joseph Maxime YENE',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Joseph Maxime Yene - Ingénieur Fullstack & DevOps',
+    title: 'Joseph Maxime YENE - Ingénieur Fullstack & DevOps',
     description: 'Portfolio professionnel - Ingénieur Fullstack & DevOps | minato.ai',
   },
   alternates: {
@@ -36,7 +36,7 @@ export const baseMetadata: Metadata = {
 export const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
-  name: 'Joseph Maxime Yene',
+  name: 'Joseph Maxime YENE',
   title: 'Ingénieur Fullstack & DevOps',
   url: 'https://josephmaxime.dev',
   email: 'maximeyene@gmail.com',
