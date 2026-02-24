@@ -13,23 +13,22 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Joseph Maxime Yene - Ingénieur Fullstack & DevOps',
   description: 'Portfolio professionnel - Ingénieur Fullstack, DevOps, Machine Learning | minato.ai | Expertise Startup',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/globe.svg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/globe.svg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/globe.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/globe.svg',
   },
 }
 
