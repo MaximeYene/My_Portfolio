@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 interface SectionTitleProps {
-  title: string
-  subtitle?: string
-  centered?: boolean
+  title: string;
+  subtitle?: string;
+  centered?: boolean;
 }
 
 export function SectionTitle({
@@ -19,7 +19,7 @@ export function SectionTitle({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className={centered ? 'text-center' : ''}
+      className={centered ? "text-center" : ""}
     >
       <h2 className="text-4xl font-bold md:text-5xl">
         <span className="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -38,5 +38,5 @@ export function SectionTitle({
         </motion.p>
       )}
     </motion.div>
-  )
+  );
 }

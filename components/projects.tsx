@@ -107,7 +107,7 @@ export function Projects() {
                     whileHover={{ x: 5 }}
                     className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium"
                   >
-                    Voir le projet
+                    {t.projects.view}
                     <ExternalLink className="h-4 w-4" />
                   </motion.a>
                 </div>

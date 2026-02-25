@@ -1,16 +1,16 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
-import { useTranslations } from '@/hooks/use-translations'
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import { useTranslations } from "@/hooks/use-translations";
 
 const skillsColorMap = {
-  frontend: 'from-blue-500 to-cyan-500',
-  backend: 'from-purple-500 to-pink-500',
-  devops: 'from-orange-500 to-red-500',
-  ml: 'from-green-500 to-emerald-500',
-}
+  frontend: "from-blue-500 to-cyan-500",
+  backend: "from-purple-500 to-pink-500",
+  devops: "from-orange-500 to-red-500",
+  ml: "from-green-500 to-emerald-500",
+};
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -20,7 +20,7 @@ const containerVariants = {
       staggerChildren: 0.1,
     },
   },
-}
+};
 
 const itemVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -28,35 +28,35 @@ const itemVariants = {
     opacity: 1,
     y: 0,
   },
-}
+};
 
 export function Skills() {
-  const t = useTranslations()
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const t = useTranslations();
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const skillsData = [
     {
-      key: 'frontend' as const,
+      key: "frontend" as const,
       category: t.skills.categories.frontend,
       skills: t.skills.skills.frontend,
     },
     {
-      key: 'backend' as const,
+      key: "backend" as const,
       category: t.skills.categories.backend,
       skills: t.skills.skills.backend,
     },
     {
-      key: 'devops' as const,
+      key: "devops" as const,
       category: t.skills.categories.devops,
       skills: t.skills.skills.devops,
     },
     {
-      key: 'ml' as const,
+      key: "ml" as const,
       category: t.skills.categories.ml,
       skills: t.skills.skills.ml,
     },
-  ]
+  ];
 
   return (
     <section id="competences" ref={ref} className="relative py-20 md:py-32">
@@ -84,7 +84,7 @@ export function Skills() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
+          animate={isInView ? "visible" : "hidden"}
           className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
         >
           {skillsData.map((skillGroup) => (
@@ -95,10 +95,14 @@ export function Skills() {
               className="group relative overflow-hidden rounded-2xl bg-card p-8 border border-border/50 transition-all hover:border-accent/50"
             >
               {/* Gradient Background */}
-              <div className={`absolute inset-0 -z-10 bg-linear-to-br ${skillsColorMap[skillGroup.key]} opacity-0 transition-opacity group-hover:opacity-10`} />
+              <div
+                className={`absolute inset-0 -z-10 bg-linear-to-br ${skillsColorMap[skillGroup.key]} opacity-0 transition-opacity group-hover:opacity-10`}
+              />
 
               {/* Category Title */}
-              <h3 className="mb-6 text-xl font-bold text-foreground">{skillGroup.category}</h3>
+              <h3 className="mb-6 text-xl font-bold text-foreground">
+                {skillGroup.category}
+              </h3>
 
               {/* Skills List */}
               <div className="space-y-3">
@@ -106,11 +110,15 @@ export function Skills() {
                   <motion.div
                     key={skill}
                     initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                    animate={
+                      isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
+                    }
                     transition={{ delay: index * 0.1 }}
                     className="flex items-center gap-3"
                   >
-                    <div className={`h-2 w-2 rounded-full bg-linear-to-r ${skillsColorMap[skillGroup.key]}`} />
+                    <div
+                      className={`h-2 w-2 rounded-full bg-linear-to-r ${skillsColorMap[skillGroup.key]}`}
+                    />
                     <span className="text-muted-foreground group-hover:text-foreground transition-colors">
                       {skill}
                     </span>
@@ -125,5 +133,5 @@ export function Skills() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

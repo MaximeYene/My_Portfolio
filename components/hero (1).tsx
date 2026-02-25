@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { motion, Variants } from 'framer-motion'
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
-import { useTranslations } from '@/hooks/use-translations'
+import { motion, Variants } from "framer-motion";
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { useTranslations } from "@/hooks/use-translations";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -13,7 +13,7 @@ const containerVariants: Variants = {
       delayChildren: 0.3,
     },
   },
-}
+};
 
 const itemVariants: Variants = {
   hidden: {
@@ -28,31 +28,34 @@ const itemVariants: Variants = {
       ease: [0.16, 1, 0.3, 1], // ✅ easing typé correctement
     },
   },
-}
+};
 
 export function Hero() {
-  const t = useTranslations()
+  const t = useTranslations();
 
   const socialLinks = [
     {
       icon: Github,
-      href: 'https://github.com/MaximeYene',
-      label: 'GitHub',
+      href: "https://github.com/MaximeYene",
+      label: "GitHub",
     },
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/in/joseph-maxime-yene-84a1481bb',
-      label: 'LinkedIn',
+      href: "https://www.linkedin.com/in/joseph-maxime-yene-84a1481bb",
+      label: "LinkedIn",
     },
     {
       icon: Mail,
-      href: 'mailto:maximeyene@gmail.com',
-      label: 'Email',
+      href: "mailto:maximeyene@gmail.com",
+      label: "Email",
     },
-  ]
+  ];
 
   return (
-    <section id="profil" className="relative min-h-screen overflow-hidden pt-20">
+    <section
+      id="profil"
+      className="relative min-h-screen overflow-hidden pt-20"
+    >
       {/* Gradient Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-10 h-72 w-72 rounded-full bg-accent/20 blur-3xl" />
@@ -105,7 +108,7 @@ export function Hero() {
             {t.hero.skills.map((skill) => (
               <motion.div
                 key={skill}
-                whileHover={{ scale: 1.1, backgroundColor: 'var(--accent)' }}
+                whileHover={{ scale: 1.1, backgroundColor: "var(--accent)" }}
                 className="rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors"
               >
                 {skill}
@@ -120,7 +123,7 @@ export function Hero() {
           >
             <motion.a
               href="#projets"
-              whileHover={{ scale: 1.05, boxShadow: '0 0 20px var(--accent)' }}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 20px var(--accent)" }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 rounded-lg bg-linear-to-r from-primary to-accent px-8 py-3 font-semibold text-accent-foreground shadow-lg transition-all"
             >
@@ -132,7 +135,7 @@ export function Hero() {
           {/* Social Links */}
           <motion.div variants={itemVariants} className="flex gap-6">
             {socialLinks.map((link) => {
-              const Icon = link.icon
+              const Icon = link.icon;
               return (
                 <motion.a
                   key={link.label}
@@ -144,7 +147,7 @@ export function Hero() {
                 >
                   <Icon className="h-6 w-6" />
                 </motion.a>
-              )
+              );
             })}
           </motion.div>
         </motion.div>
@@ -155,11 +158,9 @@ export function Hero() {
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 text-center"
         >
-          <div className="text-sm text-muted-foreground">
-            {t.hero.scroll}
-          </div>
+          <div className="text-sm text-muted-foreground">{t.hero.scroll}</div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

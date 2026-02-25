@@ -51,7 +51,7 @@ export function Experience() {
             </span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Parcours professionnel en développement fullstack et innovation startup
+            {t.experience.subtitle}
           </p>
         </motion.div>
 

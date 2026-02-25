@@ -72,7 +72,7 @@ export function Footer() {
               className="space-y-6"
             >
               <div>
-                <h4 className="font-semibold text-foreground mb-4">Contact Direct</h4>
+                <h4 className="font-semibold text-foreground mb-4">{t.footer.contactDirect}</h4>
                 <div className="space-y-3">
                   <div>
                     <p className="text-sm text-muted-foreground">Email</p>
@@ -118,8 +118,8 @@ export function Footer() {
               transition={{ delay: 0.2 }}
               className="text-center text-sm text-muted-foreground"
             >
-              <p>© 2025 Joseph Maxime Yene. Tous droits réservés.</p>
-              <p className="mt-1">Conçu et développé avec React, Next.js et Framer Motion</p>
+              <p>{t.footer.copyright}</p>
+              <p className="mt-1">{t.footer.technology}</p>
             </motion.div>
 
             {/* Social Links */}

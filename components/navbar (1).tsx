@@ -1,38 +1,41 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
-import { Sun, Moon, Globe } from 'lucide-react'
-import { useTheme } from 'next-themes'
-import { useContext, useEffect, useState } from 'react'
-import { useTranslations } from '@/hooks/use-translations'
-import { LanguageContext } from '@/components/language-context'
+import { motion } from "framer-motion";
+import { Sun, Moon, Globe } from "lucide-react";
+import { useTheme } from "next-themes";
+import { useContext, useEffect, useState } from "react";
+import { useTranslations } from "@/hooks/use-translations";
+import { LanguageContext } from "@/components/language-context";
 
 export function Navbar() {
-  const { theme, setTheme } = useTheme()
-  const languageContext = useContext(LanguageContext)
-  const { language, setLanguage } = languageContext || { language: 'fr', setLanguage: () => {} }
-  const t = useTranslations()
-  const [mounted, setMounted] = useState(false)
-  const [showLanguageMenu, setShowLanguageMenu] = useState(false)
+  const { theme, setTheme } = useTheme();
+  const languageContext = useContext(LanguageContext);
+  const { language, setLanguage } = languageContext || {
+    language: "fr",
+    setLanguage: () => {},
+  };
+  const t = useTranslations();
+  const [mounted, setMounted] = useState(false);
+  const [showLanguageMenu, setShowLanguageMenu] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   const navigation = [
-    { name: t.nav.profil, href: '#profil' },
-    { name: t.nav.competences, href: '#competences' },
-    { name: t.nav.experience, href: '#experience' },
-    { name: t.nav.projets, href: '#projets' },
-    { name: t.nav.contact, href: '#contact' },
-  ]
+    { name: t.nav.profil, href: "#profil" },
+    { name: t.nav.competences, href: "#competences" },
+    { name: t.nav.experience, href: "#experience" },
+    { name: t.nav.projets, href: "#projets" },
+    { name: t.nav.contact, href: "#contact" },
+  ];
 
   const toggleTheme = () => {
     if (mounted) {
-      setTheme(theme === 'dark' ? 'light' : 'dark')
+      setTheme(theme === "dark" ? "light" : "dark");
     }
-  }
+  };
 
   return (
     <motion.nav
@@ -55,7 +58,7 @@ export function Navbar() {
               <motion.a
                 key={item.name}
                 href={item.href}
-                whileHover={{ color: 'var(--accent)' }}
+                whileHover={{ color: "var(--accent)" }}
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-accent"
               >
                 {item.name}
@@ -85,26 +88,26 @@ export function Navbar() {
                 >
                   <button
                     onClick={() => {
-                      setLanguage('fr')
-                      setShowLanguageMenu(false)
+                      setLanguage("fr");
+                      setShowLanguageMenu(false);
                     }}
                     className={`block w-full px-4 py-2 text-left text-sm transition-colors ${
-                      language === 'fr'
-                        ? 'bg-accent text-accent-foreground font-semibold'
-                        : 'hover:bg-secondary'
+                      language === "fr"
+                        ? "bg-accent text-accent-foreground font-semibold"
+                        : "hover:bg-secondary"
                     }`}
                   >
                     Français
                   </button>
                   <button
                     onClick={() => {
-                      setLanguage('en')
-                      setShowLanguageMenu(false)
+                      setLanguage("en");
+                      setShowLanguageMenu(false);
                     }}
                     className={`block w-full px-4 py-2 text-left text-sm transition-colors ${
-                      language === 'en'
-                        ? 'bg-accent text-accent-foreground font-semibold'
-                        : 'hover:bg-secondary'
+                      language === "en"
+                        ? "bg-accent text-accent-foreground font-semibold"
+                        : "hover:bg-secondary"
                     }`}
                   >
                     English
@@ -120,9 +123,9 @@ export function Navbar() {
                 whileTap={{ scale: 0.95 }}
                 onClick={toggleTheme}
                 className="rounded-lg bg-secondary p-2 text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-                title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
               >
-                {theme === 'dark' ? (
+                {theme === "dark" ? (
                   <Sun className="h-5 w-5" />
                 ) : (
                   <Moon className="h-5 w-5" />
@@ -133,5 +136,5 @@ export function Navbar() {
         </div>
       </div>
     </motion.nav>
-  )
+  );
 }
