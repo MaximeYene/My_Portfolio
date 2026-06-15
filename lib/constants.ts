@@ -50,16 +50,16 @@ export const PROJECTS = [
     title: "GlycoTrack",
     description:
       "Application web de suivi des patients diabétiques avec IA pour améliorer les traitements médicaux en milieu hospitalier et consultation externe.",
-    tags: ["React", "Node.js", "ML", "Healthcare", "TypeScript"],
+    tags: ["NextJS", "Node.js", "ML", "Healthcare", "TypeScript"],
     link: "https://glyco-track.vercel.app/",
-    period: "09/2024 - Aujourd'hui",
+    period: "09/2024 - Aujourd'hui(En développement)",
     gradient: "from-blue-500 to-cyan-500",
   },
   {
     title: "minato.ai",
     description:
       "Plateforme destinée aux créateurs de contenu pour améliorer la vente et distribution de leurs biens et services auprès de différents publics.",
-    tags: ["React", "AI Integration", "E-commerce", "SaaS", "Startup"],
+    tags: ["NextJS", "AI Integration", "E-commerce", "SaaS", "Startup"],
     link: "https://minato-ai.vercel.app/",
     period: "06/2024 - Aujourd'hui",
     gradient: "from-purple-500 to-pink-500",
@@ -79,13 +79,35 @@ export const PROJECTS = [
       "Application mobile de livraison de colis avec intégration IA pour optimisation des routes et prévisions.",
     tags: ["Mobile", "AI/ML", "Real-time", "Logistics", "React Native"],
     link: "https://github.com/MaximeYene/MOVEGO",
-    period: "08/2025 - Aujourd'hui",
+    period: "En développement",
+    gradient: "from-green-500 to-emerald-500",
+  },
+  {
+    title: "Agrilink",
+    description:
+      "Ecosystème hybride B2B multiplateforme (Mobile et Web) permettant la commercialisation des produits agricoles aux entreprises de restauration",
+    tags: ["Mobile", "Web", "Real-time", "Logistics", "React Native", "NextJS"],
+    link: "https://agri-link-web.vercel.app/",
+    period: "En développement",
     gradient: "from-green-500 to-emerald-500",
   },
 ];
 
 // Experiences
 export const EXPERIENCES = [
+  {
+    title: "Ingénieur Informatique",
+    company: "SNPPK (Secrétariat National Permanent du Processus de Kimberley)",
+    period: "02/2026 – Aujourd'hui",
+    description:
+      "Responsable de gérer les taches ponctuelles et programmées de la cellule informatique.",
+    achievements: [
+      "Développement de la plateforme de gestion de dossiers entrants dans la structure.",
+      "Amélioration du système de suivi de dossiers en y ajoutant une touche numérique.",
+      "Création de moyens d’accès faciles aux données numériques des dossiers pour facilitation des audits.",
+      "Garantie de la disponibilité continue des services",
+    ],
+  },
   {
     title: "Ingénieur Fullstack & DevOps",
     company: "minato.ai",

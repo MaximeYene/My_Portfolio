@@ -99,6 +99,17 @@ export const translations = {
         "Parcours professionnel en développement fullstack et innovation startup",
       positions: [
         {
+          company: "SNPPK (Secrétariat National Permanent du Processus de Kimberley)",
+          role: "Ingénieur Informatique",
+          period: "02/2026 – Aujourd'hui",
+          achievements: [
+            "Développement de la plateforme de gestion de dossiers entrants dans la structure.",
+            "Amélioration du système de suivi de dossiers en y ajoutant une touche numérique.",
+            "Création de moyens d’accès faciles aux données numériques des dossiers pour facilitation des audits.",
+            "Garantie de la disponibilité continue des services",
+          ],
+        },
+        {
           company: "minato.ai",
           role: "Ingénieur Fullstack & DevOps",
           period: "2024 - 2025",
@@ -163,6 +174,13 @@ export const translations = {
           description: "Application mobile pour logistique et livraison",
           tags: ["React Native", "Firebase", "Google Maps", "Redux"],
           link: "https://github.com/MaximeYene/MOVEGO",
+        },
+        {
+          name: "Agrilink",
+          description:
+            "Écosystème hybride B2B multiplateforme (Mobile et Web) permettant la commercialisation des produits agricoles aux entreprises de restauration",
+          tags: ["Mobile", "Web", "Real-time", "Logistics", "React Native", "NextJS"],
+          link: "https://agri-link-web.vercel.app/",
         },
       ],
     },
@@ -275,6 +293,17 @@ export const translations = {
         "Professional background in fullstack development and startup innovation",
       positions: [
         {
+          company: "SNPPK (National Permanent Secretariat of the Kimberley Process)",
+          role: "IT Engineer",
+          period: "02/2026 – Present",
+          achievements: [
+            "Development of the incoming document management platform for the organization.",
+            "Improvement of the document tracking system by adding a digital touch.",
+            "Creation of easy access channels to digital document data to facilitate audits.",
+            "Ensuring continuous availability of services",
+          ],
+        },
+        {
           company: "minato.ai",
           role: "Fullstack Engineer & DevOps",
           period: "2024 - 2025",
@@ -339,6 +368,13 @@ export const translations = {
           description: "Mobile application for logistics and delivery",
           tags: ["React Native", "Firebase", "Google Maps", "Redux"],
           link: "github.com/MaximeYene/movego",
+        },
+        {
+          name: "Agrilink",
+          description:
+            "Multiplatform B2B hybrid ecosystem (Mobile & Web) for marketing agricultural products to catering companies",
+          tags: ["Mobile", "Web", "Real-time", "Logistics", "React Native", "NextJS"],
+          link: "https://agri-link-web.vercel.app/",
         },
       ],
     },
